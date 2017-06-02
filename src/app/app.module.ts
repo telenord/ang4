@@ -28,6 +28,10 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
+//
+import { BppComponent } from './bpp';
+import { CountriesComponent } from './countries';
+import { CountryList } from './countries/country-list';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -51,6 +55,10 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
+    BppComponent,
+    CountriesComponent,
+  //  CountryComponent,
+    CountryList,
     AboutComponent,
     HomeComponent,
     NoContentComponent,
@@ -63,7 +71,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules })
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

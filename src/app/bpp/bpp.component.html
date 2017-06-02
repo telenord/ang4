@@ -1,0 +1,15 @@
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+</ul>
+
+<p>{{allowBtnActive}}</p>
+<p [innerText]="allowBtnActive"></p>
+<button class="btn btn-primary" [disabled]="allowBtnActive">Active</button>
+
+
+<input type="text" [(ngModel)]="userName" >
+<button class="btn btn-primary" [disabled]="!userName" (click)="onUserClick()" >Add User</button>
