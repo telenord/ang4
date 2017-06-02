@@ -8,15 +8,9 @@ export class CountryService {
   ) {}
 
   public getData() {
-    console.log('Title#getData(): Get COUNTRY123 Data');
-    /**
-     * return this.http.get('/assets/data.json')
-     * .map(res => res.json());
-     */
-     return this.http.get(' http://sm-api.azurewebsites.net/public/geo/countries');
+
+     return this.http.get( );
      //.map(res => res.json());
-
-
   }
 
 }
