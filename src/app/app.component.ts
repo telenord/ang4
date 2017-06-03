@@ -40,6 +40,10 @@ import { AppState } from './app.service';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         About
       </a>
+      <a [routerLink]=" ['./countries'] "
+        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+        Countries
+      </a>
     </nav>
 
     <main>
@@ -47,7 +51,7 @@ import { AppState } from './app.service';
     </main>
 
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
+<bpp></bpp>
     <footer>
       <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
       <div>

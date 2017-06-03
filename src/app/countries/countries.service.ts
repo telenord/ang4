@@ -8,15 +8,11 @@ export class CountryService {
   ) {}
 
   public getData() {
-
     /**
      * return this.http.get('/assets/data.json')
      * .map(res => res.json());
      */
      return this.http.get( );
      //.map(res => res.json());
-
-
-  }
 
 }
