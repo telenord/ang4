@@ -1,15 +1,16 @@
-import {  Component, OnInit} from '@angular/core';
-
+import {  Component} from '@angular/core';
 
 @Component({
   selector:'country-list',
-  template:`<p>123</p>`,
+  template:` <ul>
+              <li *ngFor = "let country of countries" >
+                {{country.name }}
+              </li>
+            </ul>`,
+  inputs:['countries']
 })
 
-export class CountryList implements OnInit {
-
-  public ngOnInit() {
-    console.log('hello `CountryList` component');
-  }
+export class CountryList{
+  countries = [];
 
 }

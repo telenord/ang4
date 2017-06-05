@@ -30,6 +30,7 @@ import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 //
 import { BppComponent } from './bpp';
+import { CppComponent } from './cpp';
 import { CountriesComponent } from './countries';
 import { CountryList } from './countries/country-list';
 
@@ -56,6 +57,7 @@ type StoreType = {
   declarations: [
     AppComponent,
     BppComponent,
+    CppComponent,
     CountriesComponent,
   //  CountryComponent,
     CountryList,

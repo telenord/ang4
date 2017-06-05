@@ -1,11 +1,11 @@
 
   <h1>Список стран</h1>
-  <p>{{countries}}</p>
-  <ul>
-    <li *ngFor = "let country of countries" >
+  <country-list [countries]="countriesArray" ></country-list>
+  <!-- <ul>
+    <li *ngFor = "let country of " >
       {{country.name }}
     </li>
-  </ul>
+  </ul> -->
 
    <!-- <countries-list [countries]="countriesArray" >123<countries-list> -->
 <!-- <country></country> -->

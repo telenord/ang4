@@ -14,7 +14,7 @@ import {CountryList} from './country-list';
 })
 
 export class CountriesComponent implements OnInit{
-  countries: Country[] =[];
+  countriesArray: Country[] =[];
 
   constructor(
     public route: ActivatedRoute, public countryService: CountryService
@@ -26,7 +26,7 @@ export class CountriesComponent implements OnInit{
   this.countryService.getData()
   .subscribe(
   //  (response) => {console.log(response.json())},
-    (response)=> this.countries = response.json().data,
+    (response)=> this.countriesArray = response.json().data,
     (error) => console.log(error)
   );
   }
